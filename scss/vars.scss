@@ -1,0 +1,28 @@
+$georgia: 'Georgia', serif;
+$arial: 'Arial', sans-serif;
+$pink: #F1CDB3;
+$pink-light: #FDDCC4;
+$white: #FFFFFF;
+$white-light: #FAFAFA;
+$white-dark: #F6F6F6;
+$gray: #CDCDCD;
+$black: #292929;
+$dark-lightness: #545454;
+$dark-light: #4C4C4C;
+$gray-dark: #B2B2B2;
+$letter-space: 0.06em;
+
+$break-md: 1280px;
+$break-sm: 768px;
+
+@mixin md-block() {
+  @media screen and (max-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin sm-block() {
+  @media screen and (max-width: $break-sm) {
+    @content;
+  }
+}
